@@ -1,0 +1,31 @@
+body {
+  font-family: "Fira Code", sans-serif;
+}
+
+.navbar {
+  /* background-color: #1f1f28; */
+  width: auto;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container img {
+  margin: 20px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.container p {
+  max-width: 600px;
+}
+
+.container a {
+  max-width: 600px;
+}
