@@ -1,11 +1,25 @@
 body {
+  background-color: #1f1f28;
+  color: #cad3f5;
+  transition: background-color 0.3s, color 0.3s;
   font-family: "Fira Code", sans-serif;
 }
 
+body.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
 .navbar {
-  /* background-color: #1f1f28; */
   width: auto;
   height: auto;
+}
+
+.navbar button {
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-color: #cad3f5;
 }
 
 .container {
