@@ -1,45 +1,111 @@
+/* var declaration */
+:root {
+  --default-text-color: #cad3f5;
+  --default-background-color: #1f1f28;
+  --light-text-color: #000000;
+  --light-background-color: #ffffff;
+  --accent-color: #957fb8;
+}
+
+/* default body theme */
 body {
-  background-color: #1f1f28;
-  color: #cad3f5;
+  margin: 0;
+  background-color: var(--default-background-color);
+  color: var(--default-text-color);
   transition: background-color 0.3s, color 0.3s;
   font-family: "Fira Code", sans-serif;
 }
 
+/* toggled light theme */
 body.light-theme {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--light-background-color);
+  color: var(--light-text-color);
 }
 
 .navbar {
-  width: auto;
-  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.navbar a {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--default-text-color);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.navbar a i {
+  font-size: 18px;
+}
+
+.navbar a:active {
+  transform: scale(0.95);
+}
+
+.navbar a:hover {
+  background-color: var(--default-text-color);
+  color: var(--accent-color);
 }
 
 .navbar button {
-  margin: 20px;
+  background-color: var(--accent-color);
+  color: var(--default-text-color);
+  border: none;
   padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  border-color: #cad3f5;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar button i {
+  font-size: 18px;
+}
+
+.navbar button:active {
+  transform: scale(0.95);
+}
+
+.navbar button:hover {
+  background-color: var(--default-text-color);
+  color: var(--accent-color);
 }
 
 .container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
+  padding: 20px;
 }
 
 .container img {
   margin: 20px;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  border: 2px solid var(--accent-color);
 }
 
-.container p {
-  max-width: 600px;
+.container ul h3,
+.container ul p {
+  margin: 12px 0;
 }
 
-.container a {
-  max-width: 600px;
+.container ul a {
+  color: #957fb8;
+  /* text-decoration: none; */
+  padding: auto;
+  margin: 12px 4px;
+}
+
+.container * i {
+  margin-right: 6px;
 }
