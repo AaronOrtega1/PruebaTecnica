@@ -13,25 +13,16 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles-test.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
   <body>
-    <!-- modal to welcome on reload -->
-    <div id="welcome-modal" class="modal">
-      <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h2>Hello World!</h2>
-        <p>Welcome to my humble website!</p>
-      </div>
-    </div>
-
     <!-- header -->
     <header>
-      <img src="./assets/pp4.jpg" class="profilePic" alt="Profile Picture" srcset="" />
+      <img src="../assets/pp4.jpg" class="profilePic" alt="Profile Picture" srcset="" />
       <!-- Navbar for an easy access to a way to change the color of the page and access info -->
       <nav class="navbar">
         <!-- ul to contain all the information -->
@@ -42,10 +33,10 @@
           <a href="#experience"><i class="fa-solid fa-business-time"></i>Experience</a>
           <a href="#skills"><i class="fa-solid fa-code"></i>Skills</a>
           <a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a> -->
-          <a href="./HTML/aboutMe.html"><i class="fa-solid fa-user"></i>About Me</a>
-          <a href="./HTML/experience.html"><i class="fa-solid fa-business-time"></i>Experience</a>
-          <a href="./HTML/skills.html"><i class="fa-solid fa-code"></i>Skills</a>
-          <a href="./HTML/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+          <a href="../index.html"><i class="fa-solid fa-house"></i>127.0.0.1</a>
+          <a href="./experience.html"><i class="fa-solid fa-business-time"></i>Experience</a>
+          <a href="./skills.html"><i class="fa-solid fa-code"></i>Skills</a>
+          <a href="./contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
           <!-- button to change the page color -->
           <!-- TODO: adjust size of button -->
           <button id="theme-toggle" onclick="changeColor()">
@@ -56,7 +47,23 @@
       </nav>
     </header>
 
+    <!-- main container -->
+    <div class="container">
+      <!-- about section -->
+      <section id="about">
+        <h3>About Me</h3>
+        <p>
+          Currently studying Computer Systems Engineering at the Instituto Tecnológico y de Estudios
+          Superiores del Occidente, I enjoy exercising, particularly going to the gym and practicing
+          Muay Thai, although I also used to play basketball. I like almost all types of music and
+          can listen to practically anything. I enjoy spending time with my family and friends,
+          making good memories. Additionally, I really enjoy learning new things, especially if the
+          topic excites me, such as new technologies or foreign languages. When I'm interested in a
+          subject, I dive into tutorials and materials to gain the knowledge I seek.
+        </p>
+      </section>
+    </div>
     <!-- import JavaScript code -->
-    <script src="./main.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>

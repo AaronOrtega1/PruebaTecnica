@@ -8,6 +8,10 @@
 
 /* Default body theme */
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-color: var(--default-background-color);
   color: var(--default-text-color);
   margin: 0;
@@ -30,6 +34,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
 }
 
 header img {
@@ -106,184 +111,6 @@ body.light-theme header img {
 
 body.light-theme .navbar a:hover,
 body.light-theme .navbar button:hover {
-  background-color: var(--default-background-color);
-}
-
-/* Container */
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-/* Section global */
-section {
-  max-width: 1000px;
-  width: 100%;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
-}
-
-section h3 {
-  color: var(--accent-color);
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-size: 24px;
-  border-bottom: 2px solid var(--default-text-color);
-}
-
-body.light-theme section h3 {
-  border-bottom: 2px solid var(--default-background-color);
-}
-
-section p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-top: 10px;
-}
-
-/* Experience section */
-#experience a {
-  color: var(--accent-color);
-}
-
-#experience a:hover {
-  color: var(--hover-color);
-}
-
-/* Skill section */
-.skill {
-  width: 100%;
-  margin-bottom: 14px;
-}
-
-.skill span {
-  font-size: 16px;
-  margin-bottom: 4px;
-  display: flex;
-  align-items: center;
-}
-
-.skill i,
-.contact-info i {
-  margin-right: 6px;
-  font-size: 18px;
-}
-
-.skill-bar {
-  width: 100%;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.skill-level {
-  background-color: var(--accent-color);
-  height: 12px;
-  border-radius: 4px;
-}
-
-/* Contact section */
-.contact-info p {
-  display: flex;
-  flex-wrap: wrap;
-}
-.contact-info p strong {
-  margin-right: 4px;
-}
-
-.contact-info p a {
-  margin: 0;
-}
-
-.contact-info p,
-.contact-info ul {
-  margin: 10px 0;
-}
-
-.contact-info a {
-  color: var(--accent-color);
-  margin-left: 6px;
-}
-
-.contact-info a:hover {
-  color: var(--hover-color);
-}
-
-.contact-info ul {
-  list-style: none;
-}
-
-.contact-info ul li {
-  display: flex;
-  align-items: center;
-  margin: 6px 0px;
-}
-
-/* Contact section form */
-.comment-form {
-  margin-top: 20px;
-}
-
-.comment-form h4 {
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
-.comment-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.comment-form label {
-  margin-bottom: 4px;
-  font-weight: bold;
-}
-
-.comment-form input,
-.comment-form textarea {
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid var(--default-text-color);
-  border-radius: 4px;
-  background-color: var(--default-background-color);
-  color: var(--default-text-color);
-}
-
-body.light-theme .comment-form input,
-body.light-theme .comment-form textarea {
-  border: 1px solid var(--default-background-color);
-  background-color: var(--default-text-color);
-  color: var(--default-background-color);
-}
-
-.comment-form input:focus,
-.comment-form textarea:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.comment-form button {
-  align-self: flex-end;
-  padding: 10px 20px;
-  background-color: var(--accent-color);
-  color: var(--default-text-color);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.comment-form button:hover {
-  background-color: var(--default-text-color);
-  color: var(--accent-color);
-}
-
-body.light-theme .comment-form button:hover {
   background-color: var(--default-background-color);
 }
 

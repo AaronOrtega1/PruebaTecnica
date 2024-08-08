@@ -2,7 +2,7 @@
 
 ### Explanation
 
-This proyect is a user profile page with different sections about skills, experience and more, has a default dark theme and a color button to switch the theme to a light one, navigation buttons in the header to move to the different sections in the website, each time the page its reloaded a modal will appear gretting the person checking the website, at the end in the contact section there is a non-functional comment section, that has to keep the messages in the local storage of the website.
+This proyect is a user profile page with different sections about skills, experience and more, has a default dark theme and a color button to switch the theme to a light one, navigation buttons in the header to move to the different sections in the website, each time the index page its reloaded a modal will appear gretting the person checking the website, at the end in the contact section there is a non-functional comment section, that has to keep the messages in the local storage of the website.
 
 ---
 
