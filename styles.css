@@ -85,6 +85,8 @@ body.light-theme header img {
   font-size: 16px;
   border-radius: 4px;
   padding: 12px 20px;
+  width: 100%; /* Ensure that both the links and the button occupy 100% of the width */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .navbar a {
@@ -95,8 +97,7 @@ body.light-theme header img {
 .navbar button {
   cursor: pointer;
   border: none;
-  margin: 0px 4px;
-  margin-bottom: 4px;
+  margin: 4px;
 }
 
 .navbar a:active,
