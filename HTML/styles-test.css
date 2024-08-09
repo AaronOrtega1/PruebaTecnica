@@ -225,27 +225,27 @@ section p {
 }
 
 /* Contact section form */
-.comment-form {
+.comment-container {
   margin-top: 20px;
 }
 
-.comment-form h4 {
+.comment-container h4 {
   margin-bottom: 20px;
   font-size: 20px;
 }
 
-.comment-form form {
+.comment-container form {
   display: flex;
   flex-direction: column;
 }
 
-.comment-form label {
+.comment-container label {
   margin-bottom: 4px;
   font-weight: bold;
 }
 
-.comment-form input,
-.comment-form textarea {
+.comment-container input,
+.comment-container textarea {
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid var(--default-text-color);
@@ -254,20 +254,20 @@ section p {
   color: var(--default-text-color);
 }
 
-body.light-theme .comment-form input,
-body.light-theme .comment-form textarea {
+body.light-theme .comment-container input,
+body.light-theme .comment-container textarea {
   border: 1px solid var(--default-background-color);
   background-color: var(--default-text-color);
   color: var(--default-background-color);
 }
 
-.comment-form input:focus,
-.comment-form textarea:focus {
+#comment-form input:focus,
+#comment-form textarea:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.comment-form button {
+#comment-form button {
   align-self: flex-end;
   padding: 10px 20px;
   background-color: var(--accent-color);
@@ -278,11 +278,11 @@ body.light-theme .comment-form textarea {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.comment-form button:hover {
+#comment-form button:hover {
   background-color: var(--default-text-color);
   color: var(--accent-color);
 }
 
-body.light-theme .comment-form button:hover {
+body.light-theme #comment-form button:hover {
   background-color: var(--default-background-color);
 }

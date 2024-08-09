@@ -2,13 +2,13 @@
 
 ### Explanation
 
-This proyect is a user profile page with different sections about skills, experience and more, has a default dark theme and a color button to switch the theme to a light one, navigation buttons in the header to move to the different sections in the website, each time the index page its reloaded a modal will appear gretting the person checking the website, at the end in the contact section there is a non-functional comment section, that has to keep the messages in the local storage of the website.
+This project is a user profile page with different sections about skills, experience, and more. It features a minimalist yet modern design with a default dark theme and a color button to switch to a light theme. The selected theme is saved in local storage, so it doesn't reset to the default colors when the page is reloaded. Navigation buttons in the header allow users to move between different sections of the website. Each time the index page is reloaded, a modal appears, greeting the user. At the end, in the contact section, there is a functional comment form that stores the comments in the website’s local storage. I chose to divide the different sections into separate pages on the website because it looks more dynamic than having all the information on just the index.html. Since I had already completed the HTML and CSS, it was easy to divide; I simply created new HTML files and assigned them separate CSS files.
 
 ---
 
 ### How to run it
 
-To run this proyect is necessary to have npm install in your computer
+To run this project is necessary to have npm installed in your computer or Visual Studio Code
 
 - Once you have npm installed run the following command in your terminal inside the project folder:
   ```bash

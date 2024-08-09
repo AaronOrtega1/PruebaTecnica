@@ -96,6 +96,7 @@ body.light-theme header img {
   cursor: pointer;
   border: none;
   margin: 0px 4px;
+  margin-bottom: 4px;
 }
 
 .navbar a:active,
@@ -135,18 +136,28 @@ body.light-theme .navbar button:hover {
   padding: 20px;
   border: 1px solid var(--default-text-color);
   width: 80%;
+  border-radius: 4px;
+}
+
+body.light-theme .modal-content {
+  color: var(--default-background-color);
+  background-color: var(--default-text-color);
+  border: 1px solid var(--default-background-color);
 }
 
 .close-button {
-  color: var(--accent-color);
+  color: var(--default-text-color);
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
+body.light-theme .close-button {
+  color: var(--default-background-color);
+}
+
 .close-button:hover,
 .close-button:focus {
-  color: var(--hover-color);
   text-decoration: none;
   cursor: pointer;
 }
