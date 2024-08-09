@@ -283,6 +283,10 @@ body.light-theme .comment-container textarea {
   color: var(--accent-color);
 }
 
+#comment-form button:active {
+  transform: scale(0.95);
+}
+
 body.light-theme #comment-form button:hover {
   background-color: var(--default-background-color);
 }
